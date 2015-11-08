@@ -18,11 +18,9 @@
   }
   </style>
   <script>
-
-
-
-
-
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
 </script>
 </head>
 <body>
@@ -32,7 +30,7 @@
   <div class="form-group" id="emailDivision">
     <label class="control-label col-sm-5" for="email">Email address:</label>
     <div class="col-sm-3">
-      <input type="email" class="form-control" id="email" placeholder="Enter email" >
+      <input type="email" class="form-control" id="email" placeholder="Enter email" data-toggle="popover"  data-trigger="hover" data-placement="top" data-content="">
       <span class="" id="emailErrorSpan"></span>
     </div>
   </div>
@@ -81,11 +79,7 @@
 
 
 
-<script>
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
-});
-</script>
+
 <script src="js/index.js"></script>
 </body>
 </html>
