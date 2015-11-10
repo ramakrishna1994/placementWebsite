@@ -65,8 +65,8 @@ if(!isset($_SESSION['verificationemail']))
 			</div>
 			<div class="col-sm-3 vertical-center">
 						<div class = "btn-group" data-toggle = "buttons">
-   							<button class = "btn btn-primary" onclick="window.open('home.html','_self')">Home</button>
-      						<button class="btn btn-primary" onclick="window.open('aboutus.html','_self')">About Us</button>		
+   							<button class = "btn btn-primary" onclick="window.open('home.html','_self')"><span class="glyphicon glyphicon-home"></span> Home</button>
+      						<button class="btn btn-primary" onclick="window.open('aboutus.html','_self')"><span class="glyphicon glyphicon-list-alt"></span>  About Us</button>		
 						</div>
 			
 			</div>
