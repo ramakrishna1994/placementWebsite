@@ -7,12 +7,18 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/common.js"></script>
  <style>
  
-  .vertical-center
+  .margin-all
   {
    
-    margin-top:1%;
+    margin:0.2%;
+  }
+  
+  .margin-up
+  {
+  	margin-top:5px;
   }
   </style>
   <script>
@@ -23,158 +29,354 @@
 		
 		
 		
-		<div class="container-fluid well well-sm">
-			<div class="row">
-				<div class="col-sm-3 text-left btn-group">
-				  	<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-list-alt"></span> Newsfeed</button>
-				  	<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-user"></span> Profile</button>
-				  	<button type="submit" class="btn btn-primary btn-sm"> <span class="glyphicon glyphicon-globe"> <span class="badge">5</span></span></button>
-				    
-				</div>
+		<div class="container-fluid bg-primary well-sm">
+			<div class="row text-center">
 				
-				<div class="col-sm-1"><img src="images/logo.jpg" class='img-rounded'></div>
+				
+				<div class="col-sm-5 text-right"><img src="images/logo.jpg" height="11%" width="11%" class='img-rounded'></div>
 			
-				<div class="col-sm-4 text-center vertical-center">
-						<font color="orange" size="4px"><b>JNTUH College of Engineering Hyderabad</b> </font>(Autonomous)<br>
+				<div class="col-sm-4 text-left">
+						<font color="orange" size="4%"><b>JNTUH College of Engineering Hyderabad</b></font><br>(Autonomous)<br>
 							Kukatpally, Hyderabad - 500 085, Telangana, India
 				</div>
-			
-				<div class="col-sm-4 text-center">
-					<div class = "btn-group" data-toggle = "buttons">
-						   <button class = "btn btn-danger btn-sm"><span class="glyphicon glyphicon-log-out"></span> Log Out</button>
-      							
-					</div>
-				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row text-center">
+				<nav class="navbar navbar-inverse">
+  					<div class="container-fluid">
+    					<div>
+      						<ul class="nav navbar-nav">
+        						<li class="active"><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Newsfeed</a></li>
+        						<li><a href="#"><span class="glyphicon glyphicon-globe"> <span class="badge">5</span></span></a></li>
+        						<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Upcoming Companies</a></li> 
+        						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+        						 
+      						</ul>
+      						<ul class="nav navbar-nav navbar-right">
+        						<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+      						</ul>	
+    					</div>
+  					</div>
+				</nav>
+				
 			</div>
 		</div>
 	
 	
 		
-		<div class="container-fluid ">
 		
-			<div class="row">
-				<div class="col-sm-8">
+		<div class="container-fluid">
+			
+			
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+  				<div class="modal-dialog">
+
+    				<!-- Modal content-->
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal">&times;</button>
+        					<h4 class="modal-title">Modal Header</h4>
+      					</div>
+      				<div class="modal-body">
+      	 	 					<div class="panel panel-default">
+  										<div class="panel-body">A Basic Panel</div>
+								</div>
+								
+								<div class="panel panel-default">
+  										<div class="panel-body">A Basic Panel</div>
+								</div>
+								
+								<div class="panel panel-default">
+  										<div class="panel-body">A Basic Panel</div>
+								</div>
+								
+								<div class="panel panel-default">
+  										<div class="panel-body">A Basic Panel</div>
+								</div>
+								
+								<div class="panel panel-default">
+  										<div class="panel-body">A Basic Panel</div>
+								</div>
+								
+								<div class="panel panel-default">
+  										<div class="panel-body">A Basic Panel</div>
+								</div>
+								
+								<div class="panel panel-default">
+  										<div class="panel-body">A Basic Panel</div>
+								</div>
+								
+								<div class="panel panel-default">
+  										<div class="panel-body">A Basic Panel</div>
+								</div>
+								
+								<div class="panel panel-default">
+  										<div class="panel-body">A Basic Panel</div>
+								</div>	
+      				</div>
+      				<div class="modal-footer">
+        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      				</div>
+    			</div>
+
+  			</div>
+		</div>
+			
+			
+			
+			
 					
+			<div class="row text-center">
+			
+			<!-- -------------------------first panel------------ -->
+				<div class="col-sm-1"></div>
+				<div class="col-sm-2 well well-sm margin-all">
 					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-5 well well-sm" id="postsDivision" >
-						
-  								<div class="col-sm-2">
-  									<img src="images/logo.jpg" width="60px" height="60px" class="img-circle">
-  								</div>
-  								<div class="col-sm-10 text-right">
-  									<div class="row">
-  										<div class="col-sm-12">
-  											SARADHI RAMAKRISHNA
-  										</div>
-  									</div>
-  									<div class="row">
-  										<div class="col-sm-12">
-  											SARADHI RAMAKRISHNA
-  										</div>
-  									</div>
-  									<div class="col-sm-12">
-  										<div class="col-sm-12">
-  											SARADHI RAMAKRISHNA
-  										</div>
-  									</div>
-  									<div class="row">
-  										<div class="col-sm-12">
-  											I was placed in Amazon...
-  										</div>
-  									</div>
-  								</div>
-  								<div class="row"></div>
-  								<div class="row"></div>
-  								<div class="row"></div>
-  								<div class="row"></div>
-  								<div class="row">
-  									<div class="col-sm-12 btn-group text-center">
-  										<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-thumbs-up"> Like</span></button>
-  										<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"> Comment</span></button>
-  									</div>
-  								</div>
-  								
-  								<div class="col-sm-1"></div>
-  								
-  								
-  								
-  								<div class="col-sm-5 well well-sm" id="postsDivision" >
-						
-  								<div class="col-sm-2">
-  									<img src="images/logo.jpg" width="60px" height="60px" class="img-circle">
-  								</div>
-  								<div class="col-sm-10 text-right">
-  									<div class="row">
-  										<div class="col-sm-12">
-  											SARADHI RAMAKRISHNA
-  										</div>
-  									</div>
-  									<div class="row">
-  										<div class="col-sm-12">
-  											SARADHI RAMAKRISHNA
-  										</div>
-  									</div>
-  									<div class="col-sm-12">
-  										<div class="col-sm-12">
-  											SARADHI RAMAKRISHNA
-  										</div>
-  									</div>
-  									<div class="row">
-  										<div class="col-sm-12">
-  											I was placed in Amazon...
-  										</div>
-  									</div>
-  								</div>
-  								<div class="row"></div>
-  								<div class="row"></div>
-  								<div class="row"></div>
-  								<div class="row"></div>
-  								<div class="row">
-  									<div class="col-sm-12 btn btn-group text-center">
-  										<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-thumbs-up"> Like</span></button>
-  										<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"> Comment</span></button>
-  									</div>
-  								</div>
-  														
-  								</div>
-  					</div>	
-				</div>
-			</div>
-				
-				
-				
-				<div class="col-sm-4" id="scheduleDivision">
+						<img src="images/logo.jpg" width="60px" height="60px" class="img-circle">
+  					</div>			
+  					<div class="row margin-up">
+  						SARADHI RAMAKRISHNA 
+  					</div>
+  					<div class="row margin-up">
+  					 	CSE-REGULAR					
+  					</div>
+  					<div class="row margin-up">
+  						PLACED IN AMAZON
+  					</div>
+  					<div class="row margin-up">
+  										
+  					</div>
+  					<div class="row text-center margin-up">
+  						<div class="btn-group text-center">
+ 							<button type="submit" onclick="showModal()" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-thumbs-up"> Like</span></button>
+  							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"> Comment</span></button>
+  						</div>
+  					</div>
+  				</div>
+  				
+  				<!-- --------------second panel ------------------->
+  				
+  				
+  				<div class="col-md-2 well well-sm margin-all">
 					<div class="row">
-						<div class="col-sm-12 text-center">
-							SCHEDULE FOR 2015 COMPANIES
-						</div>
-					</div>
-					<table class="table table-striped text-center">
-						<tr>
-							<td><strong>S.No</strong></td>
-							<td><strong>Company Name</strong></td>
-							<td><strong>Date Of Visiting</strong></td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td class="visible-sm-inline-block">asddddddddwawwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwAmazon</td>
-							<td>21 november, 2015</td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>Amazon</td>
-							<td>21 november, 2015</td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>Amazon</td>
-							<td>21 november, 2015</td>
-						</tr> 
-					</table>
-				</div>
-			</div>
-		
+						<img src="images/logo.jpg" width="60px" height="60px" class="img-circle">
+  					</div>			
+  					<div class="row margin-up">
+  						SARADHI RAMAKRISHNA
+  					</div>
+  					<div class="row margin-up">
+  					 	CSE-REGULAR					
+  					</div>
+  					<div class="row margin-up">
+  						PLACED IN AMAZON
+  					</div>
+  					<div class="row margin-up">
+  										
+  					</div>
+  					<div class="row text-center margin-up">
+  						<div class="btn-group text-center">
+ 							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-thumbs-up"> Like</span></button>
+  							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"> Comment</span></button>
+  						</div>
+  					</div>
+  				</div>
+  				
+  				
+  				<!-- ----------------- -->
+
+				
+  				<!-- --------------second panel ------------------->
+  				
+  				
+  				<div class="col-md-2 well well-sm margin-all">
+					<div class="row">
+						<img src="images/logo.jpg" width="60px" height="60px" class="img-circle">
+  					</div>			
+  					<div class="row margin-up">
+  						SARADHI RAMAKRISHNA
+  					</div>
+  					<div class="row margin-up">
+  					 	CSE-REGULAR					
+  					</div>
+  					<div class="row margin-up">
+  						PLACED IN AMAZON
+  					</div>
+  					<div class="row margin-up">
+  										
+  					</div>
+  					<div class="row text-center margin-up">
+  						<div class="btn-group text-center">
+ 							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-thumbs-up"> Like</span></button>
+  							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"> Comment</span></button>
+  						</div>
+  					</div>
+  				</div>
+  				
+  				
+  				<!-- ----------------- -->
+				
+				
+				
+  				<!-- --------------second panel ------------------->
+  				
+  				
+  				<div class="col-md-2 well well-sm margin-all">
+					<div class="row">
+						<img src="images/logo.jpg" width="60px" height="60px" class="img-circle">
+  					</div>			
+  					<div class="row margin-up">
+  						SARADHI RAMAKRISHNA
+  					</div>
+  					<div class="row margin-up">
+  					 	CSE-REGULAR					
+  					</div>
+  					<div class="row margin-up">
+  						PLACED IN AMAZON
+  					</div>
+  					<div class="row margin-up">
+  										
+  					</div>
+  					<div class="row text-center margin-up">
+  						<div class="btn-group text-center">
+ 							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-thumbs-up"> Like</span></button>
+  							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"> Comment</span></button>
+  						</div>
+  					</div>
+  				</div>
+  				
+  				
+  				<!-- ----------------- -->
+				
+				
+				
+  				<!-- --------------second panel ------------------->
+  				
+  				
+  				<div class="col-md-2 well well-sm margin-all">
+					<div class="row">
+						<img src="images/logo.jpg" width="60px" height="60px" class="img-circle">
+  					</div>			
+  					<div class="row margin-up">
+  						SARADHI RAMAKRISHNA
+  					</div>
+  					<div class="row margin-up">
+  					 	CSE-REGULAR					
+  					</div>
+  					<div class="row margin-up">
+  						PLACED IN AMAZON
+  					</div>
+  					<div class="row margin-up">
+  										
+  					</div>
+  					<div class="row text-center margin-up">
+  						<div class="btn-group text-center">
+ 							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-thumbs-up"> Like</span></button>
+  							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"> Comment</span></button>
+  						</div>
+  					</div>
+  				</div>
+  				
+  				</div>
+  				<!-- ----------------- -->
+				
+				
+  				<!-- --------------second panel ********************** ------------------->
+  				<div class="row text-center">
+  				<div class="col-sm-1"></div>
+  				<div class="col-md-2 bg-danger margin-all well-sm">
+					<div class="row">
+						<img src="images/logo.jpg" width="60px" height="60px" class="img-circle">
+  					</div>			
+  					<div class="row margin-up">
+  						SARADHI RAMAKRISHNA
+  					</div>
+  					<div class="row margin-up">
+  					 	CSE-REGULAR					
+  					</div>
+  					<div class="row margin-up">
+  						PLACED IN AMAZON
+  					</div>
+  					<div class="row margin-up">
+  										
+  					</div>
+  					<div class="row text-center margin-up">
+  						<div class="btn-group text-center">
+ 							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-thumbs-up"> Like</span></button>
+  							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"> Comment</span></button>
+  						</div>
+  					</div>
+  				</div>
+  				
+  				
+  				<!-- ----------------- -->
+				
+				
+  				<!-- --------------second panel ------------------->
+  				
+  				
+  				<div class="col-md-2 well well-sm margin-all">
+					<div class="row">
+						<img src="images/logo.jpg" width="60px" height="60px" class="img-circle">
+  					</div>			
+  					<div class="row margin-up">
+  						SARADHI RAMAKRISHNA
+  					</div>
+  					<div class="row margin-up">
+  					 	CSE-REGULAR					
+  					</div>
+  					<div class="row margin-up">
+  						PLACED IN AMAZON
+  					</div>
+  					<div class="row margin-up">
+  										
+  					</div>
+  					<div class="row text-center margin-up">
+  						<div class="btn-group text-center">
+ 							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-thumbs-up"> Like</span></button>
+  							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"> Comment</span></button>
+  						</div>
+  					</div>
+  				</div>
+  				
+  				
+  				<!-- ----------------- -->
+				
+				
+  				<!-- --------------second panel ------------------->
+  				
+  				
+  				<div class="col-md-2 well well-sm margin-all">
+					<div class="row">
+						<img src="images/logo.jpg" width="60px" height="60px" class="img-circle">
+  					</div>			
+  					<div class="row margin-up">
+  						SARADHI RAMAKRISHNA
+  					</div>
+  					<div class="row margin-up">
+  					 	CSE-REGULAR					
+  					</div>
+  					<div class="row margin-up">
+  						PLACED IN AMAZON
+  					</div>
+  					<div class="row margin-up">
+  										
+  					</div>
+  					<div class="row text-center margin-up">
+  						<div class="btn-group text-center">
+ 							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-thumbs-up"> Like</span></button>
+  							<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"> Comment</span></button>
+  						</div>
+  					</div>
+  				</div>
+  				
+  				
+  				<!-- ----------------- -->
+				
+								
+				
+  			</div>
 		</div>
 		
 		
