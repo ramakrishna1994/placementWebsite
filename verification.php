@@ -23,7 +23,7 @@ if(!isset($_SESSION['verificationemail']))
   
   <style>
  
-  .vertical-center
+  .margin-all
   {
    
     margin-top:1%;
@@ -51,30 +51,25 @@ if(!isset($_SESSION['verificationemail']))
 
 	
 		
-		
-		<div class="container well">
+		<div class="container well margin-all">
 	
 	
 		<div class="row ">
 			<div class="col-sm-offset-3 col-sm-1">
 				<img src="images/logo.jpg" class='img-rounded'>
 			</div>
-			<div class="col-sm-5 text-center vertical-center">
+			<div class="col-sm-5 text-center margin-all">
 				<font color="orange" size="4px"><b>JNTUH College of Engineering Hyderabad</b> </font>(Autonomous)<br>
 					Kukatpally, Hyderabad - 500 085, Telangana, India
 			</div>
-			<div class="col-sm-3 vertical-center">
+			<div class="col-sm-3 margin-all">
 						<div class = "btn-group" data-toggle = "buttons">
-   							<button class = "btn btn-primary" onclick="window.open('home.html','_self')"><span class="glyphicon glyphicon-home"></span> Home</button>
-      						<button class="btn btn-primary" onclick="window.open('aboutus.html','_self')"><span class="glyphicon glyphicon-list-alt"></span>  About Us</button>		
+   							<button class = "btn btn-primary" onclick="window.open('home.html','_self')"><span class="glyphicon glyphicon-home"> Home</span></button>
+      						<button class="btn btn-primary" onclick="window.open('aboutus.html','_self')"><span class="glyphicon glyphicon-list-alt"> AboutUs</span></button>	
 						</div>
 			
 			</div>
 		</div>
-		
-		
-		
-		
 		<div class="row" >
 				<div class = "alert text-center" id="statusDivision">
 					<img src="images/loader.gif">
@@ -82,11 +77,11 @@ if(!isset($_SESSION['verificationemail']))
 		</div>
 		
 		
-		<div class="row text-center vertical-center">
+		<div class="row text-center margin-all">
 		<font color="orange"><b>Just one More Step!!</b></font><br> We have sent you a verification code to your email.<br>Please enter it below to verify your account.
 		 
 		</div>
-		<div class="row text-right vertical-center">
+		<div class="row text-right margin-all">
 					<div class="col-sm-5 " style="margin-top:6px"><span class = "glyphicon glyphicon-lock"></span></div>
     				<div class="col-sm-2"> 
       					<input type="text" class="form-control" id="registrationDateOfBirth" placeholder="Verification Code	" data-toggle="popover"  data-trigger="hover" data-placement="top" data-content="">
@@ -94,7 +89,7 @@ if(!isset($_SESSION['verificationemail']))
     				</div>
 		</div>
 		
-		<div class="row text-center vertical-center" >
+		<div class="row text-center margin-all" >
 				
 		       		<button type="submit" class="btn btn-success">Submit</button>
 		       		
@@ -102,7 +97,7 @@ if(!isset($_SESSION['verificationemail']))
 		</div>
 		
 		
-		<div class="row text-center vertical-center" >
+		<div class="row text-center margin-all" >
 				
 		           <button type="submit" class="btn btn-primary">Resend</button>
 				
